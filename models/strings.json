@@ -1,0 +1,11 @@
+{
+  "UI" : {
+    "BUTTONS" : {
+      "RESET" : "Reset",
+      "START_CHECK_ERROR" : "Calcuate Error"
+    },
+    "LABELS" : {
+
+    }
+  }
+}

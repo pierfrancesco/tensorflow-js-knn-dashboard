@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import { DropzoneArea } from 'material-ui-dropzone'
-import UploadFileManager from '../../../controllers/UploadFileManager';
+import UploadFileManager from '../../controllers/UploadFileManager';
 import { connect } from 'react-redux'
 import DropFileCss from './DropFile.module.css'
-import { addTensors } from '../../../redux/actions/tensorsActions';
-import { addFeatures, addRawData } from '../../../redux/actions/featuresActions';
+import { addTensors } from '../../redux/actions/tensorsActions';
+import { addFeatures, addRawData } from '../../redux/actions/featuresActions';
 
 class DropzoneAreaExample extends Component {
   constructor (props) {

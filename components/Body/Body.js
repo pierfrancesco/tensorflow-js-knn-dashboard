@@ -1,8 +1,8 @@
 import React from 'react';
 import BodyCss from './Body.module.css';
-import Table from './Table'
-import Menu from './Menu'
-import DropFile from './Dropfile'
+import Table from '../Table'
+import Menu from '../Menu'
+import DropFile from '../Dropfile'
 import { connect } from 'react-redux'
 
 const Body = ({features, tensors}) => {

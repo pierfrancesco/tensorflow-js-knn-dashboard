@@ -1,22 +1,31 @@
+// GENERIC IMPORTS
 import React from 'react';
-
-const k = 30;
 const tf = require('@tensorflow/tfjs');
-import { knn, error } from '../../../controllers/TensorFlowManager';
-import MenuCss from './Menu.module.css'
+import { connect } from 'react-redux';
+
+// CONTROLLERS
+import { knn, error } from '../../controllers/TensorFlowManager';
+import { loadCSV } from '../../controllers/CSVManager'
+
+// COMPONENTS & ELEMENTS
+import ResetButton from '../../elements/ResetButton'
 import { FormGroup, FormControl, Input, Select, ListItemText, InputLabel, Checkbox, MenuItem } from '@material-ui/core';
-import ResetButton from '../../../elements/ResetButton'
-import { connect } from 'react-redux'
-import { removeTensors } from '../../../redux/actions/tensorsActions'
+
+// STYLES
+import MenuCss from './Menu.module.css'
+
+// ACTIONS
+import { removeTensors } from '../../redux/actions/tensorsActions'
 import {
   removeFeatures,
   removeSelectedFeatures,
   addSelectedFeatures,
   addLabels
-} from '../../../redux/actions/featuresActions'
-import { loadCSV } from '../../../controllers/CSVManager'
+} from '../../redux/actions/featuresActions'
 
-// TODO: table pagination
+// CONSTANTS & VAR
+const k = 30;
+
 // TODO: features selection
 // TODO: label selection
 // TODO: k selection
@@ -105,7 +114,7 @@ const Menu = ({
 
         let {features, labels, testFeatures, testLabels} = loadCSV(myRawData, {
           shuffle: true,
-          splitTest: k,
+          splitTest: 50,
           dataColumns: mySelectedFeatures,
           labelColumns: [mySelectedLabels]
         });
