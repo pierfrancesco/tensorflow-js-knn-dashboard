@@ -10,6 +10,7 @@ This project is made with NextJS (React) and Redux plus Material-UI.
 To start playing around clone the project and then run inside the folder:
 
 `npm run i`
+
 `npm run dev`
 
 ---
