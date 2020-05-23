@@ -1,0 +1,17 @@
+.appDropFile  {
+    position: relative;
+    top: 40%;
+    margin: auto;
+}
+
+.appDropFile>div {
+    width: 80%;
+    margin: auto;
+    height: 90px;
+    min-height: 90px;
+}
+
+.appDropFile p {
+    font-size: 15px;
+    margin: 5px;
+}

@@ -1,0 +1,13 @@
+.appBody {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 64px);
+    background-color: #FFF;
+    display: flex;
+}
+
+.mainArea {
+    flex: 0 0 75%;
+    height: 100%;
+    overflow: scroll;
+}

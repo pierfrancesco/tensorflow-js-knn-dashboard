@@ -1,0 +1,7 @@
+.appTable {
+    height: 100%;
+    -moz-box-shadow: -4px 0 3px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: -4px 0 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: -4px 0px 3px 1px rgba(0, 0, 0, 0.3);
+    overflow: scroll;
+}
