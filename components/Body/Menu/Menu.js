@@ -1,6 +1,6 @@
 import React from 'react';
 
-const k = 10;
+const k = 30;
 const tf = require('@tensorflow/tfjs');
 import { knn, error } from '../../../controllers/TensorFlowManager';
 import MenuCss from './Menu.module.css'
@@ -102,11 +102,12 @@ const Menu = ({
       </FormControl>
 
       <ResetButton disabled={false} onClick={() => {
+
         let {features, labels, testFeatures, testLabels} = loadCSV(myRawData, {
           shuffle: true,
-          splitTest: 10,
-          dataColumns: myFeatures,
-          labelColumns: [...mySelectedLabels]
+          splitTest: k,
+          dataColumns: mySelectedFeatures,
+          labelColumns: [mySelectedLabels]
         });
 
         features = tf.tensor(features);

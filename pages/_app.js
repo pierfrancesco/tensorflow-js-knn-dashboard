@@ -6,7 +6,9 @@ import store from '../redux/store';
 
 const tf = require('@tensorflow/tfjs');
 // Add the WASM backend to the global backend registry.
-require('@tensorflow/tfjs-backend-wasm');
+import { setWasmPath } from '@tensorflow/tfjs-backend-wasm';
+
+setWasmPath('/misc/tfjs-backend-wasm.wasm');
 
 class MyApp extends App {
 

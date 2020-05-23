@@ -18,7 +18,7 @@ class DropzoneAreaExample extends Component {
         let {features, tensors, rawData} = await UploadFileManager(files[0]);
 
         this.props.addFeatures(features);
-        this.props.addTensors(tensors);
+        this.props.addTensors(tensors.slice(0,100));
         this.props.addRawData(rawData);
       } catch (e) {
         // TODO: manage errors
