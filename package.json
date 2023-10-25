@@ -15,7 +15,7 @@
     "loadash": "^1.0.0",
     "material-ui-dropzone": "^3.0.0",
     "material-ui-icons": "^1.0.0-beta.36",
-    "next": "9.4.1",
+    "next": "13.5.0",
     "next-redux-wrapper": "^4.0.1",
     "react": "^16.12.0",
     "react-animated-css": "^1.2.1",
